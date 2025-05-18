@@ -124,5 +124,9 @@
     </div>
 
     <script src="scripts/main.js"></script>
+	<script>
+  const md = document.getElementById("readme-content").innerText;
+  document.getElementById("readme-content").innerHTML = marked.parse(md);
+</script>
 </body>
 </html>
